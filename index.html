@@ -61,14 +61,53 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contactus.html"
-                ><span class="fa fa-address-card fa-lg"></span> Contact</a
-              >
+              <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a>
             </li>
           </ul>
+          <span class="navbar-text">
+            <a data-bs-toggle="modal" data-bs-target="#loginModal">
+              <span class="fa fa-sign-in"></span> Login</a>
+          </span>
         </div>
       </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <div class="col-sm-4">
+                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                  <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                </div>
+                <div class="col-sm-4">
+                  <label class="sr-only" for="exampleInputPassword3">Password</label>
+                  <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                </div>
+                <div class="col-sm-auto">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label"> Remember me
+                      </label>
+                  </div>
+                </div>
+              </div><br>
+              <div class="form-row modal-footer border-0"> <!-- border-0 remove horizontal lines  -->
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm"> Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header class="jumbotron">
       <!-- no jumbotron in bootstrap 5 -->
       <div class="container">
@@ -86,7 +125,10 @@
           </div>
 
           <div class="col-12 col-sm align-self-center d-grid gap-2">
-            <a class="btn btn-warning" href="#reverse" role="button">Reserve Table</a>
+            <!-- apply this data HTML attribute and sent it to true, that means that the tooltip content can be styled using HTML -->
+            <a class="btn btn-warning" data-bs-toggle="tooltip" data-bs-html="true" 
+            title="Or Call us at  <br><strong>+852 12345678</strong>" data-bs-placement="bottom"
+            href="#reverse" role="button">Reserve Table</a>
           </div>
 
         </div>
@@ -339,6 +381,11 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('[data-bs-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
