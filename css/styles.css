@@ -52,6 +52,7 @@ body {
 .carousel-caption {
     top: 20%;
     bottom: auto;
+    left: 30%;
 }
 
 .carousel {
