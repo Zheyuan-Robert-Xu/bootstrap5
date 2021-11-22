@@ -63,6 +63,16 @@ body {
   left: 30%;
 }
 
+.modal .modal-header {
+  background-color: #512DA8;
+}
+.modal .modal-body {
+  background-color: #D1C4E9;
+}
+.modal .modal-title {
+  color: #fffaf0;
+}
+
 #carouselButton {
   right: 0px;
   position: absolute;
