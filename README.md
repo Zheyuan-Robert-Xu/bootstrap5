@@ -5,7 +5,7 @@
 - [Description](#-description)
 - [Tools used](#%EF%B8%8F-tools-used)
 - [Installation](#%EF%B8%8F-installation)
-- [References/Credits](#-referencescredits)
+- [References](#-referencescredits)
 
 
 
