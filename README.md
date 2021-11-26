@@ -4,8 +4,9 @@
 ## Table of Content:
 - [Description](#-description)
 - [Tools used](#%EF%B8%8F-tools-used)
-- [References/Credits](#-referencescredits)
 - [Installation](#%EF%B8%8F-installation)
+- [References/Credits](#-referencescredits)
+
 
 
 ### 📜 Description:
@@ -40,10 +41,13 @@ A Bootstrap web, which uses the newest version 5.1.x. Some changes from version 
 - Github actions
 
 
-### 🔖 References
-- Copyright free images taken from Coursera course **Front-End Web UI Frameworks and Tools: Bootstrap 4**.
-
 
 ### ⚙️ Installation:
 - Complete the set up of Node.js, NPM module and lite-server on your machine
 - To check out the website locally, run `npm start`.  Note: Make sure to `cd` into this Git repository folder.
+
+
+### 🔖 References
+- Copyright free images taken from Coursera course **Front-End Web UI Frameworks and Tools: Bootstrap 4**.
+
+
